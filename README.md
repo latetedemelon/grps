@@ -62,16 +62,11 @@ Example of calibration reporting information:
 [14:31:35][I][ld2420:260]: Total samples: 251
 ```
 
+
 ```
-external_components:
-  - source: github://gelidusresearch/grps@current
-    components: [ ld2420 ]
-    refresh: 0s
-
-
 esphome:
-  name: presence-2
-  friendly_name: presence-2
+  name: presence-1
+  friendly_name: presence-1
 
 esp32:
   board: esp32dev
@@ -97,7 +92,7 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "presence-2"
+    ssid: "presence-1"
     password: ""
 
 captive_portal:
